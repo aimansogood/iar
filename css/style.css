@@ -427,3 +427,11 @@ img.animated.pulse {
     padding-right: 0;
     border-right: none;
 }
+
+.contact-card {
+    height: 100%;
+}
+
+.contact-card-inner {
+    height: 100%;
+}
