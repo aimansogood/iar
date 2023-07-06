@@ -86,11 +86,26 @@
 
 
     <!-- Demo Video Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 100%;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+    <style>
+        .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        border: 1px solid black;
+        }
+        .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
+    </style>
+    <div class="container">
+        <div class="video-container">
+            <video controls loop autoplay>
+                <source src="vid/demo.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
     <!-- Demo Video End -->
